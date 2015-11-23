@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+
+	"name" : "Calories Counter",
+	"description": "Helps you keep track of your calories throught out the day",
+	"version": "1.0",
+
+	"browser_action": {
+		"default_icon":"icon.png",
+		"default_popup":"index.html"
+		},
+		"options_page" : "options.html",
+		
+		"background":{
+			"scripts": ["eventPage.js"],
+			//this page will occur only when specific event is encountered
+			"persistent": false
+		},
+		
+	"permissions": [
+		"storage",
+		"notifications",
+		"contextMenus"
+	]
+}
